@@ -1,156 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HTML Lists — Demonstration</title>
-  <style>
-    body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial; line-height:1.5; padding:24px; background:#f7f7fb; color:#111; }
-    header { margin-bottom:18px }
-    h1 { margin:0 0 6px 0; font-size:1.6rem }
-    p.lead { margin:0 0 18px 0; color:#444 }
-    .card { background:#fff; border-radius:12px; padding:18px; box-shadow: 0 6px 18px rgba(17,24,39,0.06); margin-bottom:16px }
-    code { background:#eef2ff; padding:2px 6px; border-radius:6px; font-family:monospace }
-    .example { margin-top:12px }
-    .side-by-side { display:grid; grid-template-columns:1fr 1fr; gap:12px }
-    .preview { border:1px dashed #e2e8f0; border-radius:8px; padding:12px; background:#fcfcff }
-    small.note { display:block; margin-top:8px; color:#666 }
-    footer { margin-top:18px; color:#666; font-size:0.9rem }
-  </style>
+    <title>HTML Lists Example</title>
 </head>
 <body>
-  <header>
-    <h1>HTML Lists — Demonstration</h1>
-    <p class="lead">Examples showing: ordered list (<code>&lt;ol&gt;</code>), unordered list (<code>&lt;ul&gt;</code>), nested lists, an ordered list inside an unordered list, and definition lists (<code>&lt;dl&gt;</code>).</p>
-  </header>
+    <h1>Working with Lists in HTML</h1>
 
-  <section class="card">
-    <h2>1. Ordered List (<code>&lt;ol&gt;</code>)</h2>
-    <p>An ordered list displays items with numbers (1., 2., 3., ...). Use <code>&lt;li&gt;</code> elements inside the <code>&lt;ol&gt;</code>.</p>
-    <div class="side-by-side example">
-      <div>
-        <pre class="preview"><code>&lt;ol&gt;
-  &lt;li&gt;First item&lt;/li&gt;
-  &lt;li&gt;Second item&lt;/li&gt;
-  &lt;li&gt;Third item&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-      </div>
-      <div class="preview">
-        <ol>
-          <li>First item</li>
-          <li>Second item</li>
-          <li>Third item</li>
-        </ol>
-      </div>
-    </div>
-  </section>
+    <!-- Ordered List -->
+    <h2>1. Ordered List</h2>
+    <ol>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ol>
 
-  <section class="card">
-    <h2>2. Unordered List (<code>&lt;ul&gt;</code>)</h2>
-    <p>Unordered lists show bullet points. Use <code>&lt;ul&gt;</code> with <code>&lt;li&gt;</code> elements.</p>
-    <div class="side-by-side example">
-      <div>
-        <pre class="preview"><code>&lt;ul&gt;
-  &lt;li&gt;Apples&lt;/li&gt;
-  &lt;li&gt;Bananas&lt;/li&gt;
-  &lt;li&gt;Cherries&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-      </div>
-      <div class="preview">
-        <ul>
-          <li>Apples</li>
-          <li>Bananas</li>
-          <li>Cherries</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    <!-- Unordered List -->
+    <h2>2. Unordered List</h2>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+    </ul>
 
-  <section class="card">
-    <h2>3. Nested Lists</h2>
-    <p>You can nest lists inside list items — either same type or mixed. This helps show hierarchy.</p>
-    <div class="side-by-side example">
-      <div>
-        <pre class="preview"><code>&lt;ul&gt;
-  &lt;li&gt;Fruits
-    &lt;ul&gt;
-      &lt;li&gt;Citrus&lt;/li&gt;
-      &lt;li&gt;Berries&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Vegetables&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-      </div>
-      <div class="preview">
-        <ul>
-          <li>Fruits
+    <!-- Nested List -->
+    <h2>3. Nested List</h2>
+    <ul>
+        <li>Fruits
             <ul>
-              <li>Citrus</li>
-              <li>Berries</li>
+                <li>Orange</li>
+                <li>Grapes</li>
             </ul>
-          </li>
-          <li>Vegetables</li>
-        </ul>
-      </div>
-    </div>
-    <small class="note">Tip: Indent nested lists for readability in your HTML source.</small>
-  </section>
+        </li>
+        <li>Vegetables
+            <ul>
+                <li>Carrot</li>
+                <li>Spinach</li>
+            </ul>
+        </li>
+    </ul>
 
-  <section class="card">
-    <h2>4. Ordered List inside an Unordered List</h2>
-    <p>You may place an ordered list inside an unordered list item (or vice versa) — useful for step groups within categories.</p>
-    <div class="side-by-side example">
-      <div>
-        <pre class="preview"><code>&lt;ul&gt;
-  &lt;li&gt;Setup steps
-    &lt;ol&gt;
-      &lt;li&gt;Install software&lt;/li&gt;
-      &lt;li&gt;Configure settings&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Notes&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-      </div>
-      <div class="preview">
-        <ul>
-          <li>Setup steps
+    <!-- Ordered List inside Unordered List -->
+    <h2>4. Ordered List inside Unordered List</h2>
+    <ul>
+        <li>Steps to Install Software
             <ol>
-              <li>Install software</li>
-              <li>Configure settings</li>
+                <li>Download setup file</li>
+                <li>Run installer</li>
+                <li>Finish installation</li>
             </ol>
-          </li>
-          <li>Notes</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+        </li>
+        <li>Restart your system</li>
+    </ul>
 
-  <section class="card">
-    <h2>5. Definition List (<code>&lt;dl&gt;</code>)</h2>
-    <p>Definition lists pair a term (<code>&lt;dt&gt;</code>) with one or more descriptions (<code>&lt;dd&gt;</code>).</p>
-    <div class="side-by-side example">
-      <div>
-        <pre class="preview"><code>&lt;dl&gt;
-  &lt;dt&gt;HTML&lt;/dt&gt;
-  &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
-  &lt;dt&gt;CSS&lt;/dt&gt;
-  &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
-&lt;/dl&gt;</code></pre>
-      </div>
-      <div class="preview">
-        <dl>
-          <dt>HTML</dt>
-          <dd>HyperText Markup Language</dd>
-          <dt>CSS</dt>
-          <dd>Cascading Style Sheets</dd>
-        </dl>
-      </div>
-    </div>
-    <small class="note">Definition lists are great for glossaries, FAQs, or term/description pairs.</small>
-  </section>
-
-  <footer>
-    <p>That's it — a compact demo of HTML list types. Copy this file, open in a browser, and experiment by adding more nested items or mixing types.</p>
-  </footer>
+    <!-- Definition List -->
+    <h2>5. Definition List</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JS</dt>
+        <dd>JavaScript</dd>
+    </dl>
 </body>
 </html>
